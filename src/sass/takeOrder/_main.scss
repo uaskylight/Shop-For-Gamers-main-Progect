@@ -1,0 +1,17 @@
+main {
+  background-image: ('../images/fons/mobile/background_1.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  @include media(768px) {
+    background-image: url('../images/fons/tablet/background_1.jpg');
+    @include retina {
+      background-image: url('../images/fons/tablet/background_1_x2.jpg');
+    }
+    @include media(1280px) {
+      background-image: url('../images/fons/desctop/background_2.jpg');
+      @include retina {
+        background-image: url('../images/fons/desctop/background_2_x2.jpg');
+      }
+    }
+  }
+}
